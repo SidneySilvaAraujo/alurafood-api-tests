@@ -1,0 +1,15 @@
+info:
+  name: confirmar-pagamento
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{gateway}}/pagamentos-ms/pagamentos/2/confirmar"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

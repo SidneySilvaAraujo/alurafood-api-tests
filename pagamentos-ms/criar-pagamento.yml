@@ -1,11 +1,11 @@
 info:
-  name: altoriza-pagamento
+  name: criar-pagamento
   type: http
-  seq: 4
+  seq: 2
 
 http:
-  method: PUT
-  url: "{{gateway}}/pedidos-ms/pedidos/2/pago"
+  method: POST
+  url: "{{gateway}}/pagamentos-ms/pagamentos/cadastrar"
   auth: inherit
 
 settings:
